@@ -11,6 +11,11 @@ public class TraversalQueue {
           q.add(30);
           q.add(40);
           q.add(50);
-        System.out.print( "Before"+ q);
+           int n = q.size();
+         for( int i = 0;i<n;i++){
+             System.out.print(q.peek()+" ");
+             q.add(q.remove());
+         }
+        System.out.println();
     }
 }
